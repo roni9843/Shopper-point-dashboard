@@ -1,0 +1,22 @@
+/* FileInput.css */
+
+.file-input-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+  }
+  
+  /* Hide the actual file input */
+  .custom-file-upload input {
+    display: none;
+  }
+  

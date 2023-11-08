@@ -1,0 +1,11 @@
+/* Add this CSS to your styles */
+.slick-prev,
+.slick-next {
+  font-size: 1.5rem;
+  color: #000; /* Customize arrow color */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #333; /* Customize arrow color on hover */
+}
