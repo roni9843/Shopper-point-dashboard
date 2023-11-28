@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Shoppers-Point-Dashboard/static/css/main.f3f9d14d.css",
+    "main.js": "/Shoppers-Point-Dashboard/static/js/main.42572750.js",
+    "static/js/787.f8030ab4.chunk.js": "/Shoppers-Point-Dashboard/static/js/787.f8030ab4.chunk.js",
+    "index.html": "/Shoppers-Point-Dashboard/index.html",
+    "main.f3f9d14d.css.map": "/Shoppers-Point-Dashboard/static/css/main.f3f9d14d.css.map",
+    "main.42572750.js.map": "/Shoppers-Point-Dashboard/static/js/main.42572750.js.map",
+    "787.f8030ab4.chunk.js.map": "/Shoppers-Point-Dashboard/static/js/787.f8030ab4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3f9d14d.css",
+    "static/js/main.42572750.js"
+  ]
+}

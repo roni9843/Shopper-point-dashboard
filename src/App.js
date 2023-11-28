@@ -6,6 +6,7 @@ import "./App.css";
 import AddCategoryPage from "./components/AddCategoryPage/AddCategoryPage";
 import AddProductPage from "./components/AddProductPage/AddProductPage";
 import HackerStyleApp from "./components/Crop2/CropSec";
+import DeleteProductPage from "./components/DeleteProductPage/DeleteProductPage";
 
 function App() {
   const [option, setOption] = useState("category");
@@ -53,6 +54,7 @@ function App() {
             >
               Add Product
             </button>
+
             <button
               onClick={() => setOption("crop")}
               type="button"
@@ -60,12 +62,13 @@ function App() {
             >
               Crop
             </button>
+
             <button
-              onClick={() => setOption("game")}
+              onClick={() => setOption("delete")}
               type="button"
               className="btn btn-outline-primary"
             >
-              Game
+              Delete
             </button>
           </div>
         </div>
@@ -74,7 +77,16 @@ function App() {
           <div>
             {option === "category" && <AddCategoryPage></AddCategoryPage>}
             {option === "crop" && <HackerStyleApp></HackerStyleApp>}
-            {option === "game" && <HackerStyleApp></HackerStyleApp>}
+            {option === "delete" && <DeleteProductPage></DeleteProductPage>}
+            {
+              // option === "update" && <UpdateProduct></UpdateProduct>
+            }
+            {
+              // option === "game" && <HackerStyleApp></HackerStyleApp>
+            }
+            {
+              //option === "game2" && <DEMOTest></DEMOTest>
+            }
 
             {option === "product" && (
               <AddProductPage

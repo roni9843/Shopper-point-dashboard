@@ -49,6 +49,65 @@ export default function AddProductPage({
   // ? state for user input
   const [productImageList, setProductImageList] = useState([]);
 
+  const [productNameError, setProductNameError] = useState("");
+  const [productCategoryError, setProductCategoryError] = useState("");
+  const [productPriceError, setProductPriceError] = useState("");
+  const [productOfferError, setProductOfferError] = useState("");
+  const [productSizeError, setProductSizeError] = useState("");
+
+  const validateAndPostProduct = () => {
+    console.log(productCategory);
+
+    // Validate Product Name
+    if (!productName.trim()) {
+      setProductNameError("Product Name cannot be empty");
+      return;
+    } else {
+      setProductNameError("");
+    }
+
+    // Validate Product Category
+    if (!productCategory) {
+      setProductCategoryError("Please select a category");
+      return;
+    } else {
+      setProductCategoryError("");
+    }
+
+    // Validate Product Price
+    if (!productPrice.trim()) {
+      setProductPriceError("Product Price cannot be empty");
+      return;
+    } else {
+      setProductPriceError("");
+    }
+
+    if (isProductOffer) {
+      // Validate Product Price
+      if (!productOffer.trim()) {
+        setProductOfferError("Product offer cannot be empty");
+        return;
+      } else {
+        setProductOfferError("");
+      }
+    }
+
+    if (isProductSize) {
+      // Validate Product Price
+      if (!productSize.length === true) {
+        setProductSizeError("Product size cannot be empty");
+        return;
+      } else {
+        setProductSizeError("");
+      }
+    }
+
+    // Continue with posting the product if all validations pass
+    postProduct();
+
+    // ... (your existing fetch and post logic)
+  };
+
   const postSize = () => {
     setProductSize("");
     setProductSizeList([...productSizeList, productSize]);
@@ -406,10 +465,38 @@ export default function AddProductPage({
                   <button
                     type="button"
                     className="btn btn-primary"
-                    onClick={() => postProduct()}
+                    onClick={() => validateAndPostProduct()}
                   >
                     Post Product
                   </button>
+
+                  {/* Display error messages */}
+                  {productNameError && (
+                    <div className="alert alert-danger mt-2">
+                      {productNameError}
+                    </div>
+                  )}
+                  {productCategoryError && (
+                    <div className="alert alert-danger mt-2">
+                      {productCategoryError}
+                    </div>
+                  )}
+                  {productPriceError && (
+                    <div className="alert alert-danger mt-2">
+                      {productPriceError}
+                    </div>
+                  )}
+                  {productOfferError && (
+                    <div className="alert alert-danger mt-2">
+                      {productOfferError}
+                    </div>
+                  )}
+                  {productSizeError && (
+                    <div className="alert alert-danger mt-2">
+                      {productSizeError}
+                    </div>
+                  )}
+
                   <div>
                     <div className="mt-2">
                       <textarea
