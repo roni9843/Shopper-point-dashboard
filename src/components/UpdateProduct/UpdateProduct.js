@@ -100,7 +100,7 @@ export default function UpdateProduct() {
   return (
     <div>
       <div>
-        <label>Name:</label>
+        <label>Name :</label>
         <input
           type="text"
           value={updateData.name}
@@ -111,7 +111,7 @@ export default function UpdateProduct() {
       </div>
 
       <div>
-        <label>Category:</label>
+        <label>Category :</label>
         <select
           value={updateData.category}
           onChange={(e) =>
