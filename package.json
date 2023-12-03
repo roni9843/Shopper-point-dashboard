@@ -1,5 +1,5 @@
 {
-  "homepage": "https://rony9843.github.io/Shoppers-Point-Dashboard",
+  "homepage": "https://github.com/roni9843/Shopper-point-dashboard",
   "name": "shoppers-point-dashboard",
   "version": "0.1.0",
   "private": true,
@@ -52,6 +52,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.1.0"
   }
 }
