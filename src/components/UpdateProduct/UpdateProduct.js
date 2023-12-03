@@ -120,7 +120,7 @@ export default function UpdateProduct() {
         >
           {allCategory.map((category) => (
             <option key={category.name} value={category.name}>
-              Category : {category.name}
+              {category.name}
             </option>
           ))}
         </select>
