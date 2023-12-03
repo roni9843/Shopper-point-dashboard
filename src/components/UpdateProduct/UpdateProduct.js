@@ -111,7 +111,7 @@ export default function UpdateProduct() {
       </div>
 
       <div>
-        <label>Category :</label>
+        <label>Category : </label>
         <select
           value={updateData.category}
           onChange={(e) =>
