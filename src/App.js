@@ -60,7 +60,7 @@ function App() {
               type="button"
               className="btn btn-outline-primary"
             >
-              Crop
+              Crop - - -
             </button>
 
             <button
